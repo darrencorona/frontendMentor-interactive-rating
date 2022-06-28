@@ -1,0 +1,197 @@
+:root {
+  --clr-orange: hsl(25, 97%, 53%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-lightGray: hsl(217, 12%, 63%);
+  --clr-mediumGray: hsl(216, 12%, 54%);
+  --clr-darkBlue: hsl(215, 20%, 16%);
+  --clr-veryDarkBlue: hsl(216, 12%, 8%);
+
+  --fontSize: 15px;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--clr-veryDarkBlue);
+  color: var(--clr-white);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======================= 
+          CARD 
+ ======================= */
+.card {
+  width: 420px;
+  height: 415px;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 41, 51, 1) 0%,
+    rgba(23, 30, 40, 1) 100%
+  );
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Rating state start */
+
+.card-rating .card-body {
+  width: 85%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-rating .card-icon-wrap {
+  align-self: flex-start;
+  width: 55px;
+  height: 55px;
+  background-color: #262f38;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+}
+
+.card-rating .card-top-icon {
+  width: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -9px;
+  margin-left: -9px;
+}
+
+.card-rating .card-title {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.card-rating .card-text {
+  margin-bottom: 20px;
+  color: var(--clr-mediumGray);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-rating .card-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-rating .card-item {
+  width: 55px;
+  height: 55px;
+  list-style: none;
+  background-color: #262f38;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-rating .card-link {
+  color: var(--clr-mediumGray);
+  text-decoration: none;
+}
+
+.card-rating .btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 15px;
+  border-radius: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: var(--clr-orange);
+  border: none;
+  color: var(--clr-white);
+}
+
+.card-rating .btn:hover {
+  cursor: pointer;
+}
+
+.card-rating .btn:active {
+  color: var(--clr-darkBlue);
+  padding: 12px 0;
+  /* border: 1px solid rgb(252, 252, 252); */
+  background-color: #eaa716;
+}
+
+.card-rating .card-top-icon,
+.card-rating .card-item,
+.card-rating .btn {
+  align-self: flex-start;
+}
+/* Rating state end */
+
+/* Thank you state start */
+.card-thank .card-body {
+  width: 85%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-thank .card-top-img {
+  width: 170px;
+}
+
+.card-thank .card-selected {
+  padding: 6px 22px;
+  color: #a76d42;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #262f38;
+  border-radius: 20px;
+}
+
+.card-thank .card-content {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-thank .card-title {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.card-thank .card-text {
+  width: 93%;
+  text-align: center;
+  color: var(--clr-mediumGray);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Thank you state end */
+
+/* ======================= 
+        ATTRIBUTAION 
+ ======================= */
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--clr-orange);
+}
